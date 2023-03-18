@@ -8,8 +8,52 @@
     tools:context=".MainActivity">
 
 
+    <TextView
+        android:id="@+id/whoAre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/matrix"
+        android:text="Who are you?"
+        android:textColor="#02BD21"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
+    <TextView
+        android:id="@+id/helloName"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="100dp"
+        android:fontFamily="@font/matrix"
+        android:lineSpacingExtra="34sp"
+        android:text="Hello "
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/enterWhat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameSpinner" />
+
+    <Spinner
+        android:id="@+id/nameSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="#02BD21"
+        android:backgroundTint="#02BD21"
+        android:elevation="100dp"
+        android:textAlignment="center"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/whoAre" />
+
+    <TextView
             android:id="@+id/enterWhat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

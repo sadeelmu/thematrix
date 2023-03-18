@@ -2,7 +2,12 @@ package com.example.sadeelassignment
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.AdapterView
+import android.widget.ArrayAdapter
 import android.widget.Button
+import android.widget.Spinner
+import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import com.example.sadeelassignment.databinding.ActivityMainBinding
@@ -43,6 +48,28 @@ class MainActivity : AppCompatActivity() {
                 commit()
             }
         }
+
+        val nameText:TextView = findViewById(R.id.helloName)
+        val nameSpinner:Spinner = findViewById(R.id.nameSpinner)
+        val options = arrayOf("Neo", "Morpheus", "Trinity", "The Oracle", "Agents")
+        nameSpinner.adapter = ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, options)
+
+        nameSpinner.onItemSelectedListener=object : AdapterView.OnItemSelectedListener{
+            override fun onItemSelected(
+                parent: AdapterView<*>?,
+                view: View?,
+                position: Int,
+                id: Long
+            ) {
+               nameText.text ="Hello "+ options.get(position)
+            }
+
+            override fun onNothingSelected(parent: AdapterView<*>?) {
+                TODO("Not yet implemented")
+            }
+
+        }
+
     }
 
     //display fragments in FrameLayout
