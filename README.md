@@ -8,7 +8,8 @@ The app utilizes the following:
   4. Bottom Navigation Bar
   5. Spinners
   6. onItemSelectedListener
-  7. Bindings
+  7. Buttons
   8. Overriding 
+  9. Bindings
   
 The app also uses its own font and theme. 
