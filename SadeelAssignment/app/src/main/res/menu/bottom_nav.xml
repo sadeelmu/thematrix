@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Question"
+        android:id="@+id/question"
+        android:icon="@drawable/ic_baseline_question_mark"
+      />
+    <item android:title="Red Pill"
+        android:id="@+id/red_door"
+        android:icon="@drawable/ic_baseline_door_one"/>
+    <item android:title="Blue Pill"
+        android:id="@+id/blue_door"
+        android:icon="@drawable/ic_baseline_door_two"/>
+</menu>
