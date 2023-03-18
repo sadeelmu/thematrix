@@ -6,7 +6,9 @@ The app utilizes the following:
   2. setOnClickListener
   3. Menus
   4. Bottom Navigation Bar
-  5. Bindings
-  6. Overriding 
+  5. Spinners
+  6. onItemSelectedListener
+  7. Bindings
+  8. Overriding 
   
 The app also uses its own font and theme. 
